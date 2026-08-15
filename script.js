@@ -149,3 +149,15 @@ const yearElement = document.getElementById("year");
 if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
 }
+// --- Feature 1: Mobile Hamburger Menu ---
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+}
+
+// --- Feature 2: New Feature (Add Below Here) ---
+// Your new JavaScript code goes here... 
