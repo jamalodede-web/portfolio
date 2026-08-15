@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Jamal Odede</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -34,18 +34,21 @@
                 <form action="https://api.web3forms.com/submit" method="POST">
                     
                     <!-- Web3Forms Access Key -->
-                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                    <input type="hidden" name="access_key" value="69628e36-ad3b-428a-92ee-c7975042c7c3">
+
+                    <!-- Custom email redirect / subject line configuration -->
+                    <input type="hidden" name="subject" value="New Portfolio Contact Form Submission">
 
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <input type="email" id="email" name="email" placeholder="jamalodede@gmail.com" required>
 
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" placeholder="Say hello..." required></textarea>
 
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn-primary">Send Message</button>
                 </form>
             </div>
         </section>
