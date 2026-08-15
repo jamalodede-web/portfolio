@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="showcase-container">
+        <a href="../index.html" class="back-link">← Back to Portfolio</a>
+        <h1>Interactive Project Showcase 🚀</h1>
+        <p class="subtitle">Filter projects dynamically or click a card to open a preview modal.</p>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="javascript">JavaScript</button>
+            <button class="filter-btn" data-filter="css">CSS Layouts</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div id="projectGrid" class="project-grid">
+            <div class="card" data-category="javascript" data-title="Task Tracker App" data-desc="A full task management tool featuring dynamic DOM creation, state toggling, and item deletion.">
+                <span class="badge">JavaScript</span>
+                <h3>Task Tracker App</h3>
+                <p>Manage daily tasks with real-time UI updates.</p>
+                <button class="preview-btn">View Details</button>
+            </div>
+
+            <div class="card" data-category="css" data-title="Responsive Layout Engine" data-desc="Modern CSS Grid and Flexbox techniques for mobile-first user interfaces.">
+                <span class="badge">CSS Layouts</span>
+                <h3>Responsive Layout Engine</h3>
+                <p>Flexbox & Grid layouts designed for all devices.</p>
+                <button class="preview-btn">View Details</button>
+            </div>
+
+            <div class="card" data-category="javascript" data-title="Interactive Counter Widget" data-desc="A mini JavaScript widget demonstrating state management and event listeners.">
+                <span class="badge">JavaScript</span>
+                <h3>Interactive Counter</h3>
+                <p>Live count manipulator with reset functionality.</p>
+                <button class="preview-btn">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dynamic Modal Popup -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-btn">&times;</span>
+            <h2 id="modalTitle">Project Title</h2>
+            <p id="modalDesc">Project description goes here...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
